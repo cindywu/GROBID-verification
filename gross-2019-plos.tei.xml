@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /home/lopez/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Contest models highlight inherent inefficiencies of scientific funding competitions</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Public Library of Science (PLoS)</publisher>
+				<availability status="unknown"><p>Copyright Public Library of Science (PLoS)</p>
+				</availability>
+				<date type="published" when="2019-01-02">Published: January 2, 2019</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kevin</forename><surname>Gross</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Carl</forename><forename type="middle">T</forename><surname>Bergstrom</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<note type="raw_affiliation">University School of Medicine, UNITED STATES</note>
+								<orgName type="department">University School of Medicine, UNITED STATES</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Contest models highlight inherent inefficiencies of scientific funding competitions</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">PLOS Biology</title>
+						<title level="j" type="abbrev">PLoS Biol</title>
+						<idno type="eISSN">1545-7885</idno>
+						<imprint>
+							<publisher>Public Library of Science (PLoS)</publisher>
+							<biblScope unit="volume">17</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<biblScope unit="page">e3000065</biblScope>
+							<date type="published" when="2019-01-02">Published: January 2, 2019</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1371/journal.pbio.3000065</idno>
+					<idno type="PMID">30601806</idno>
+					<idno type="PMCID">PMC6314589</idno>
+					<ptr type="open-access" target="https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000065&amp;type=printable" />
+					<note type="submission">Received: July 24, 2018 Accepted: November 28, 2018</note>
+					<note>META-RESEARCH ARTICLE OPEN ACCESS Citation: Gross K, Bergstrom CT (2019) Contest models highlight inherent inefficiencies of scientific funding competitions. PLoS Biol 17(1): e3000065. Academic Editor: Data Availability Statement: Data in S1 Fig are available from the references cited in the figure caption. Parameter values for all numerical examples are within the paper and its Supporting Information files. Funding: The authors received no specific funding for this work. Competing interests: The authors have declared that no competing interests exist. Abbreviations: ROI, return on investment.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<appInfo>
+				<application version="0.6.1-SNAPSHOT" ident="GROBID-SDO" when="2020-05-29T03:08+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid-sdo"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Scientific research funding is allocated largely through a system of soliciting and ranking competitive grant proposals. In these competitions, the proposals themselves are not the deliverables that the funder seeks, but instead are used by the funder to screen for the most promising research ideas. Consequently, some of the funding program's impact on science is squandered because applying researchers must spend time writing proposals instead of doing science. To what extent does the community's aggregate investment in proposal preparation negate the scientific impact of the funding program? Are there alternative mechanisms for awarding funds that advance science more efficiently? We use the economic theory of contests to analyze how efficiently grant proposal competitions advance science, and compare them with recently proposed, partially randomized alternatives such as lotteries. We find that the effort researchers waste in writing proposals may be comparable to the total scientific value of the research that the funding supports, especially when only a few proposals can be funded. Moreover, when professional pressures motivate investigators to seek funding for reasons that extend beyond the value of the proposed science (e.g., promotion, prestige), the entire program can actually hamper scientific progress when the number of awards is small. We suggest that lost efficiency may be restored either by partial lotteries for funding or by funding researchers based on past scientific success instead of proposals for future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author summary</head><p>The grant proposal system compels researchers to devote substantial time to writing proposals that could have instead been used to do science. Here, we use the economic theory of contests to show that as fewer grants are funded, the value of the science that researchers forgo while preparing proposals can approach or exceed the value of the science that the funding program supports. As a result, much of the scientific impact of the funding program is squandered. Unfortunately, increased waste and reduced efficiency is inevitable in a grant proposal competition when the number of awards is small. How can scarce funds be allocated efficiently, then? As one alternative, we show that a partial lottery that PLOS Biology | https://doi.</p></div>
+			</abstract>
+		</profileDesc>
+		<revisionDesc>
+				<date type="submission" when="-1-1-3000065" />
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><formula xml:id="formula_0">a1111111111 a1111111111 a1111111111 a1111111111 a1111111111</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Over the past 50 years, research funding in the United States has failed to keep pace with growth in scientific activity. Funding rates in grant competitions have plummeted (S1 <ref type="figure" target="#fig_0">Fig, [1</ref> <ref type="bibr">-4]</ref>) and researchers spend far more time writing grant proposals than they did in the past <ref type="bibr" target="#b4">[5]</ref>. A large survey of top US universities found that, on average, faculty devote 8% of their total time-and 19% of their time available for research activities-towards preparing grant proposals <ref type="bibr" target="#b5">[6]</ref>. Anecdotally, medical school faculty may spend fully half their time or more seeking grant funding <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b6">7]</ref>. While the act of writing a proposal may have some intrinsic scientific value <ref type="bibr" target="#b7">[8]</ref>-perhaps by helping an investigator sharpen ideas-much of the effort given to writing proposals is effort taken away from doing science <ref type="bibr" target="#b8">[9]</ref>. With respect to scientific progress, this time is wasted <ref type="bibr" target="#b9">[10]</ref>.</p><p>Frustrated with the inefficiencies of the current funding system, some researchers have called for an overhaul of the prevailing funding model <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref>. In particular, Fang and Casadevall <ref type="bibr" target="#b15">[16]</ref> recently suggested a partial lottery, in which proposals are rated as worthy of funding or not, and then a subset of the worthy proposals are randomly selected to receive funds. Arguments in favor of a partial lottery include reduced demographic and systemic bias, increased transparency, and a hedge against the impossibility of forecasting how scientific projects will unfold <ref type="bibr" target="#b15">[16]</ref>. Indeed, at least three funding organizations-New Zealand's Health Research Council and their Science for Technological Innovation program, as well as the Volkswagen Foundation <ref type="bibr" target="#b18">[19]</ref>-have recently begun using partial lotteries to fund riskier, more exploratory science.</p><p>Compared with a proposal competition, a lottery permits more proposals to qualify for funding and thus lowers the bar that applicants must clear. A lottery also offers a lower reward for success, as a successful proposal receives a chance at funding, not a guarantee of funding. Thus, we expect that investigators applying to a partial lottery will invest less time and fewer resources in writing a proposal. To a first approximation, then, a proposal competition funds high-value projects while wasting substantial researcher time on proposal preparation, whereas a partial lottery would fund lower-value projects on average but would reduce the time wasted writing proposals. It is not obvious which system will have the greater net benefit for scientific progress.</p><p>In this article, we study the merits and costs of traditional proposal competitions versus partial lotteries by situating both within the rich economic theory of contests. In this theory, competing participants make costly investments ("bids") in order to win one or more prizes <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b20">21]</ref>. Participants differ in key attributes, such as ability and opportunity cost, that determine their optimal strategies. In an economics context, contests are often used by the organizer as a mechanism to elicit effort from the participants. For example, TopCoder and Kaggle are popular contest platforms for tech firms (the organizers) to solicit programming or data-analysis effort from freelance workers (the participants). However, because the participants' attributes influence their optimal strategies, the bids that participants submit reveal those attributes. Thus, screening of participants often arises as a side effect.</p><p>In funding competitions, the organizer is a funding body and the participants are competing investigators. Investigators pitch project ideas of varying scientific value by preparing costly proposals. However, unlike a traditional economic contest, the funding body's primary objective is to identify the most promising science, using proposals to screen for high-value ideas. The funding body has little interest in eliciting work during the competition itself, as the proposals are not the deliverables the funder seeks. All else equal, the funding agency would prefer to minimize the work that goes into preparing proposals, to leave as much time as possible for investigators to do science. In this case, how should the funder organize the contest to support promising science without squandering much of the program's benefit on time wasted writing proposals?</p><p>Below, we pursue this question by presenting and analyzing a contest model for scientific funding competitions. We first use the model to assess the efficiency of proposal competitions for promoting scientific progress and ask how that efficiency depends on how many proposals are funded. We next explore how efficiency is impacted when extrascientific incentives such as professional advancement motivate scientists to pursue funding, and compare the efficiency of proposal competitions with that of partial lotteries. Finally, we reflect on alternative ways to improve the efficiency of funding competitions without adding intentional randomness to the award process. All of our analyses focus on equilibrium behavior and thus pertain most directly to long-standing funding competitions, for which researchers can acquire experience that informs their future actions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A contest model for scientific funding competitions</head><p>Our model draws upon a framework for contests developed by Moldovanu and Sela <ref type="bibr" target="#b19">[20]</ref>. In our application, a large number of scientists (or research teams) compete for grants to be awarded by a funding body. The funder can fund a proportion p of the competing investigators. We call p the payline, although p could be smaller than the proportion of investigators who are funded if some investigators do not enter the competition.</p><p>Project ideas vary in their scientific value, which we write as v, where v�0. In this case, scientific value combines the abilities of the investigator and the promise of the idea itself. Although we do not assign specific units to v, scientific value can be thought of as some measure of scientific progress, such as the expected number of publications or discoveries. We assume that the funder seeks to advance science by maximizing the scientific value of the projects that it funds, minus the value of the science that investigators forgo while writing proposals. However, the funder cannot observe the value of a project idea directly. Instead, the funder evaluates proposals for research projects, and awards grants to the top-ranked proposals. Assume that proposals can be prepared to different strengths, denoted x�0, with a larger value of x corresponding to a stronger proposal. A scientist with a project idea of value v must decide how much effort to invest in writing a proposal, that is, to what strength x her proposal should be prepared. In our model, this decision is made by a cost-benefit optimization.</p><p>On the benefit side, if a proposal is funded, the investigator receives a reward equal to the scientific value of the project, or v. This reward is public, in the sense that it benefits both the investigator and the funder. Receiving a grant may also bestow an extrascientific reward on the recipient, such as prestige, promotion, or professional acclaim. Write this extrascientific reward as v 0 �0. This extrascientific reward is private, as it benefits only the grant recipient and not the funder. Let η(x) be the equilibrium probability that a proposal of strength x is funded; η(x) will be a nondecreasing function of x. Thus, in expectation, an investigator with a project of value v who prepares a proposal of strength x receives a benefit of (v 0 +v)η(x).</p><p>Preparing a grant proposal also entails a disutility cost equal to the value of the science that the investigator could have produced with the time and resources invested in writing. Let c <ref type="bibr">(v,x)</ref> give the disutility cost of preparing a proposal of strength x for a project of value v. Here, we study the case where c(v,x) is a separable function of v and x, so we set c(v,x) = g(v)h(x). Proposal competitions are effective screening devices because it is easier to write a strong proposal about a good idea than about a poor one. Therefore, g(v) is a decreasing function of v, i.e., g 0 (v)&lt;0. For a given idea, it takes more work to write a stronger proposal, and thus h 0 (x)&gt;0. Finally, we assume that preparing a zero-strength proposal is tantamount to opting out of the competition, which can be done at zero cost. Thus, h(0) = 0.</p><p>Preparing a proposal has some scientific value of its own through the sharpening of ideas that writing a proposal demands <ref type="bibr" target="#b7">[8]</ref>. Let k2[0,1) be the proportion of the disutility cost c(v,x) that an investigator recoups by honing her ideas. We call the recouped portion of the disutility cost the intrinsic scientific value of writing a proposal. The portion of the disutility cost that cannot be recouped is scientific waste.</p><p>All told, the total benefit to the investigator of preparing a proposal to strength x is (v 0 +v)η(x)+kc(v,x), and the total cost is c <ref type="bibr">(v,x)</ref>. The difference between the benefit and the cost is the investigator's payoff. The investigator's optimal proposal (or, in economic terms, her "bid") maximizes this payoff ( <ref type="figure" target="#fig_0">Fig 1)</ref>: For simplicity, we assume that variation among projects is captured entirely in the distribution of v, which we write as F(v). We assume that v 0 and k have common values shared by all investigators. In S1 Text we show that our results extend to cases where v 0 or k vary among investigators, as long as they are perfectly correlated with v. The challenge in finding the payoff-maximizing bid b(v) is that the equilibrium probability of funding, η(x), must be determined endogeneously, in a way that is consistent with both the payline p and the distribution of bids that investigators submit. In S1 Text, we follow Hoppe and colleagues <ref type="bibr" target="#b21">[22]</ref> to show that, at equilibrium, the bid function is given by</p><formula xml:id="formula_1">bðvÞ ¼ arg max x fðv 0 þ vÞZðxÞ À ð1 À kÞcðv;xÞg:<label>ð1Þ</label></formula><formula xml:id="formula_2">bðvÞ ¼ h À 1 1 1 À k R v 0 v 0 þ t gðtÞ x 0 ðtÞdt � � :<label>ð2Þ</label></formula><p>In</p><formula xml:id="formula_3">Eq 2, ξ(v) = η(b(v))</formula><p>is the equilibrium probability that an idea of value v is funded. The particular form of ξ(v) depends on how much randomness is introduced during the review process, which we discuss below. By comparison, Moldovanu and Sela <ref type="bibr" target="#b19">[20]</ref> considered a contest with a small number of competitors, in which the contest's judges observe x directly. In their setup, each contestant is uncertain about the strength of her competition (that is, her competitors' types, v), but she can be certain that the strongest bid will win the top prize. In our case, we assume that the applicant pool is large enough that the strength of the competition (i.e., the distribution of v among the applicants) is predictable. However, the funding agency does not observe x directly, but instead convenes a review panel to assess each proposal's strength. Variability among reviewers' opinions then introduces an element of chance into which proposals get funded.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Scientific efficiency</head><p>We use the model to explore how efficiently the grant competition advances science. From the perspective of an individual investigator, the investigator's return on her investment (ROI) is the ratio of her payoff to the cost of her bid:</p><formula xml:id="formula_4">Investigator 0 s ROI ¼ ðv 0 þ vÞZðbðvÞÞ À ð1 À kÞcðv;bðvÞÞ cðv;bðvÞÞ :<label>ð3Þ</label></formula><p>An investigator will never choose to write a proposal that generates a negative payoff, because she can always obtain a payoff of 0 by opting out. (If the investigator opts out, Eq 3 evaluates to 0/0, in which case we define her ROI to be 0.) Thus, an investigator's equilibrium ROI must be �0.</p><p>To analyze the funding program's impact on scientific progress as a whole, we compare the total value of the science that the funding program supports with the total value of the science that has been squandered preparing proposals. Of course, both of these quantities will be confounded with the number of grants that are funded, so we standardize to a per-funded-proposal basis. In notation, the average scientific value per funded proposal is</p><formula xml:id="formula_5">1 p R vZðbðvÞÞdFðvÞ;<label>ð4Þ</label></formula><p>and the average scientific waste per funded proposal is</p><formula xml:id="formula_6">1 p R ð1 À kÞcðv;bðvÞÞdFðvÞ:<label>ð5Þ</label></formula><p>We will refer to the difference between these two quantities as the scientific gain (or loss, should it be negative) per funded proposal, which is our measure of the funding program's scientific efficiency.</p><p>Note that while an investigator will never enter a grant competition against her own self interest, there is no guarantee that the scientific value per funded proposal will exceed the scientific waste. This is because the investigator's payoff includes private, extrascientific rewards obtained by winning a grant (v 0 ), and (in our accounting, at least) these extrascientific rewards do not benefit the funding agency. If extrascientific motivations for winning grants are large enough, investigators may enter a grant competition even when doing so decreases their scientific productivity. If enough investigators are motivated accordingly, then the scientific progress sacrificed to writing proposals could exceed the scientific value of the funding program. In this case, the grant competition would operate at a loss to science, and the funding agency could do more for science by eschewing the proposal competition and spreading the money evenly among active researchers in the field, or by giving the money to researchers selected entirely at random.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis and numerical results</head><p>We illustrate the model's behavior by choosing a few possible sets of parameter values. Our parameter choices are not directly informed by data. Thus, while the numerical examples illustrate the model's possible behavior, we highlight the results that are guaranteed to hold in general. Throughout, we use the following baseline set of parameters. We assume that the project values, v, have a triangular distribution ranging from v min = 0.25 to v max = 1 with a mode at v min , such that low-value ideas are common and high-value ideas are rare (i.e., F(v) = 1−(16/9)(1−v) 2 ). For the cost function, we choose c(v,x) = x 2 /v. We choose a convex dependence on x to suggest that the marginal cost of improving a proposal increases as the proposal becomes stronger. We assume that the intrinsic scientific value of writing a proposal allows investigators to recoup k = 1/3 of the disutility cost of proposal preparation. We first explore the case when investigators are motivated purely by the scientific value of their projects (v 0 = 0) and then introduce extrascientific benefits (v 0 = 0.25). In S1 Text and S3-S6 Figs, we provide parallel results with two alternative parameter sets.</p><p>The evaluation process by which review panels rank proposals introduces a layer of randomness to the awarding of grants <ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref>. To capture noisy assessment, we use a bivariate copula <ref type="bibr" target="#b25">[26]</ref> to specify the joint distribution of a proposal's actual quantile, and its quantile as assessed by the funding agency's review panel. A bivariate copula is a probability distribution on the unit square that has uniformly distributed marginals, as all quantiles must. We use a Clayton copula <ref type="bibr" target="#b26">[27]</ref>, which allows for accurate assessment of weak proposals, but noisier assessment of strong proposals (S2 <ref type="figure">Fig)</ref>. This choice is motivated by the pervasive notion that review panels can readily distinguish strong proposals from weak ones, but struggle to discriminate among strong proposals <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b24">25,</ref><ref type="bibr" target="#b27">28]</ref>. A Clayton copula has a single parameter (θ) that controls how tightly its two components are correlated. Rather arbitrarily, we use θ = 10 in the baseline parameter set. The Clayton copula has the important property that a proposal's probability of funding increases monotonically as its strength increases, regardless of the payline. Thus, we exclude the possibility that panels systematically favor weaker proposals. By using a copula, we implicitly assume that η(x) depends on x only through its rank. In S1 Text, we show how a copula leads to an equation for ξ 0 (v), which can then be plugged in to Eq 2. <ref type="figure" target="#fig_1">Fig 2 shows</ref> numerical results for the baseline parameters at generous (p = 45%) and low (p = 15%) paylines. In this particular case, investigators' payoffs fall faster than costs as paylines drop, leading to a reduced ROI for everyone at the lower payline ( <ref type="figure" target="#fig_1">Fig 2B)</ref>. We will argue below that every investigator's ROI must inevitably fall when the payline becomes small (see S2 and S3 Figs for additional examples).</p><p>From the funding agency's perspective, with our baseline parameters, both the average scientific value and average waste per funded proposal increase as the payline falls, for paylines below 50% ( <ref type="figure" target="#fig_2">Fig 3A)</ref>. However, as the payline decreases, waste escalates more quickly than scientific value, reducing the scientific gain per funded project ( <ref type="figure" target="#fig_2">Fig 3B)</ref>. This same result also appears in our alternative parameter sets (S5 and S6 Figs). We will argue below that the decline in scientific efficiency at low paylines is an inevitable if unfortunate characteristic of proposal competitions.</p><p>Clearly, quantitative details of the model's predictions depend on the parameter inputs. To understand the robustness of these predictions, it helps to study the case in which panels discriminate perfectly among proposals. While perfect discrimination is obviously unrealistic in practice, it yields a powerful and general set of results that illuminate how the model behaves when discrimination is imperfect. Numerical results for perfect discrimination under the baseline parameter set appear in S7 and S8 Figs.</p><p>At equilibrium under perfect assessment, every project above a threshold value v � = F −1 (1−p) will receive funding, and no project idea below this threshold will be funded. Investigators with projects of value v&gt;v � all prepare proposals to the identical strength</p><formula xml:id="formula_7">x � = h −1 [(v 0 +v � )/((1−k)g(v � ))]</formula><p>and are funded with certainty. Investigators with projects of value v&lt;v � opt out (S7 <ref type="figure">Fig).</ref> All of the subsequent results follow (details appear in S1 Text). First, as paylines drop, all investigators realize either a diminishing or zero ROI, because investigators who remain in the competition must pay a higher cost for a reduced payoff. Second, the average scientific value per funded proposal must increase as paylines drop, because only the highest-value projects are funded under low paylines. Third, in the limiting case in which only one of many proposals can be funded (technically, the limit as p approaches 0 from above), the scientific value and scientific waste associated with the last funded project converge, and science is no better off than if no grant had been given at all (S8 <ref type="figure">Fig)</ref>.</p><p>With perfect assessment, there is no general relationship between the scientific efficiency of a proposal competition and the payline that holds across the full range of paylines (but see Scientific efficiency of grant proposal competitions Hoppe and colleagues <ref type="bibr" target="#b21">[22]</ref> for a sharp result when the cost function is independent of v). Of course, we wouldn't expect scientific efficiency to decline monotonically with a falling payline, because there are likely to be some low-value projects that can be weeded out at low cost. However, our last result above guarantees that the scientific gain per funded proposal must eventually vanish as the payline declines to a single award.</p><p>Returning to the reality of imperfect discrimination, as long as review panels do not systematically favor weaker proposals, noisy assessment changes little about these qualitative results. That is, investigators' ROIs will drop as paylines fall, the average scientific value per funded proposal will increase as paylines decrease, and the scientific efficiency of the proposal competition must eventually decline as the payline approaches a single award. But efficiency need not drop to zero. Perhaps counterintuitively, imperfect discrimination is a saving grace at low paylines. Noisy assessment discourages top investigators from pouring excessive effort into grant writing as paylines fall, because the marginal benefit of writing an even better grant becomes small when review panels struggle to discriminate among top proposals. Indeed, noisy assessment, unlike perfect discrimination, allows a proposal competition to retain a positive impact on science, even with a single funded grant (compare <ref type="figure" target="#fig_2">Fig 3 and S8 Fig)</ref>. This result hints at the salutary nature of randomness at low paylines, which we will see more vividly when we consider lotteries below.</p><p>Thus far, we have considered the case in which investigators are motivated only by the scientific value of the projects proposed (v 0 = 0). Now, suppose that investigators are additionally motivated by the extrascientific benefits of receiving a grant, such as professional advancement or prestige (v 0 &gt;0). Eq 2 shows that adding extrascientific motivation will increase the effort that investigators devote to preparing grant proposals. However, in our model, at least, this extra effort has no bearing on which grants are funded and thus does not affect the scientific value of the grants that are awarded. Increasing scientific costs without increasing scientific value will clearly be detrimental to the funding program's scientific efficiency. Extrascientific benefits to investigators can even cause the entire funding program to operate at a loss to science when paylines are low <ref type="figure" target="#fig_2">(Fig 3)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Lotteries</head><p>Our model can also be used to analyze the efficiency of a partial lottery for advancing science. Suppose that a fraction q�p of proposals qualify for the lottery, and each qualifying proposal is equally likely to be chosen for funding. Call q the "lottery line." Now, the investigator's payoff</p><formula xml:id="formula_8">is (p/q)(v 0 +v)η l (x)−(1−k)c(v,x), where η l (x)</formula><p>is the equilibrium probability that the proposal qualifies for the lottery. In S1 Text, we show that the investigator's bid is given by</p><formula xml:id="formula_9">bðvÞ ¼ h À 1 p q 1 1 À k R v 0 v 0 þ t gðtÞ x 0 l ðtÞdt � �<label>ð6Þ</label></formula><p>where ξ l (v) = η l (b(v)). Our major result for lotteries is that measures of scientific efficiency-expressions 3, 4, and 5-depend on the lottery line q but are independent of the payline p (proofs appear in S1 Text). This result follows from the fact that, in a lottery, each investigator's benefit and cost are proportional to p. Thus, an investigator's ROI and the scientific efficiency of the funding program are determined by the lottery line but are not affected by the payline. To illustrate, <ref type="figure">Fig 4</ref> compares an investigator's costs and benefits in a proposal competition with 45%, 30%, and 15% paylines versus a partial lottery with a q = 45% lottery line and the same three paylines.</p><p>The key feature of <ref type="figure">Fig 4</ref> is that the investigator's benefit curve in a partial lottery scales in such a way that her ROI is the same for any payline �q. Consequently, a partial lottery with a lottery line of q and any payline �q achieves the same scientific efficiency as a proposal competition with a payline of q.</p><p>Thus, our numerical results showing the investigator's ROI ( <ref type="figure" target="#fig_1">Fig 2B)</ref> or the scientific efficiency <ref type="figure" target="#fig_2">(Fig 3)</ref> in a funding competition also show the efficiency of a lottery with the equivalent lottery line. That is, a lottery in which 45% of applicants qualify for the lottery has the same scientific efficiency as a proposal competition with a 45% payline, regardless of how many proposals in the lottery are randomly selected for funding. Thus, a lottery can restore the losses in efficiency that a proposal competition suffers as paylines become small.</p><p>In S1 Text, we also analyze a more general type of lottery in which proposals are placed into one of a small number of tiers, with proposals in more selective tiers awarded a greater chance of funding <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b28">29]</ref>. In a multitiered lottery, the efficiency is entirely determined by the number of tiers and the relative probabilities of funding in each, and is independent of the payline. Numerical results (S9 <ref type="figure">Fig)</ref> illustrate that the scientific value and waste of a multitiered lottery fall in between those of a proposal competition and a single-tiered lottery. Thus, a multitiered lottery offers an intermediate design that would partially reduce the waste associated with preparing proposals, while still allowing review panels to reward the best proposals with a higher probability of funding.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Our major result is that proposal competitions are inevitably and inescapably inefficient mechanisms for funding science when the number of awards is smaller than the number of meritorious proposals. The contest model presented here suggests that a partially randomized scheme for allocating funds-that is, a lottery-can restore the efficiency lost as paylines fall, albeit at the expense of reducing the average scientific value of the projects that are funded.</p><p>Why does a lottery disengage efficiency from the payline, while a proposal competition does not? For investigators, proposal competitions are, to a first approximation, all-or-nothing affairs, because an investigator only obtains a substantial payoff if her grant is funded. At high paylines (or, more precisely, when the number of awards matches the number of high-value projects), investigators with high-value projects can write proposals that win funding at modest cost to themselves. As the number of awards dwindles, however, competition stiffens. Depending on the details of the assessment process, an investigator with a high-value project must either work harder for the same chance of funding, or work just as hard for a smaller chance of funding. Either way, the return on her investment declines sharply. Thus, a contest is most efficient at the payline that weeds out low-value projects but does not attempt to discriminate among the high-value projects (e.g., <ref type="figure">S6 Fig)</ref>. At lower paylines, however, the effort needed to signal which projects are most valuable begins to approach the value of those projects, making the funding program less worthwhile.</p><p>In a lottery, investigators do not compete for awards per se, but instead compete for admission to the lottery. The value to the investigator of being admitted to the lottery scales directly with the number of awards. It turns out that both the investigator's expected benefit and her costs of participation scale directly with the payline and thus the payline has no effect on efficiency. (In S1 Text, we follow Hoppe and colleagues <ref type="bibr" target="#b21">[22]</ref> to show that this scaling can be explained by the economic <ref type="figure">Fig 4.</ref> An investigator's ROI falls as the payline drops in a proposal competition but is independent of the payline in a partial lottery. A: Benefit (blue or green) and cost (red) curves for an investigator with a project at the 90th percentile of v in a proposal competition. The dark blue, light blue, and green curves show benefits with a 45%, 30%, and 15% payline, respectively. Vertical lines show the investigator's bid, with the length of the solid portion giving the payoff and the length of the dashed portion giving the cost. The investigator's ROI declines as the payline decreases (note also that her effort does not vary monotonically with the payline). B: The same investigator's benefit and cost curves in a partial lottery with a 45% lottery line. The investigator's ROI is the same for all paylines. These results use the baseline parameter set given in the main text. ROI, return on investment. principle of revenue equivalence.) If there are fewer awards than high-value projects, a lottery that weeds out the low-value projects but does not attempt to discriminate among high-value projects will facilitate scientific progress more efficiently than a contest.</p><p>Unfortunately, empirical comparisons between the efficiencies of funding competitions versus partial lotteries do not yet exist, to the best of our knowledge. However, two recent anecdotes support our prediction that the waste in proposal competitions is driven by the strategic dynamics of the contest itself. First, in 2012, the US National Science Foundation's Divisions of Environmental Biology and Integrative Organismal Systems switched from a twiceper-year, one-stage proposal competition to a once-per-year, two-stage competition, in part to reduce applicants' workload. However, the switch failed to reduce the applicants' aggregate workload meaningfully <ref type="bibr" target="#b29">[30]</ref>, and the two-stage mechanism was subsequently abandoned. Second, in 2014, the National Health and Medical Research Council of Australia streamlined the process of applying for their Project Grants, cutting the length of an application in half <ref type="bibr" target="#b30">[31]</ref>. However, researchers spent more time, not less, preparing proposals after the process had been streamlined, both individually and in aggregate <ref type="bibr" target="#b30">[31]</ref>. Both of these experiences are consistent with our prediction that, in a proposal competition, the effort that applicants expend is dictated by the value of funding to the applicants and the number of awards available, but does not depend on the particular format of the proposals.</p><p>A lottery is a radical alternative, and may be politically untenable <ref type="bibr" target="#b31">[32]</ref>. If a lottery is not viable, an alternative approach to restoring efficiency is to design a contest in which the effort given to competing for awards has more direct scientific value. For example, a contest that rewards good science in its completed form-as opposed to rewarding well-crafted proposals that describe future science-motivates the actual practice of good science, and will be less wasteful at low paylines <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b13">14]</ref>. Program officers could also be given the discretion to allocate some funds by proactively scouting for promising researchers or projects. Of course, a contest based on completed science or scouting has its own drawbacks, including rich-getting-richer feedback loops, a risk of new barriers to entry for investigators from historically underrepresented demographic groups, and the Goodhart's law phenomenon, whereby a metric that becomes a target ceases to be a good metric <ref type="bibr" target="#b32">[33]</ref>. Nevertheless, it is tantalizing to envision a world in which the resources that universities currently devote to helping researchers write proposals are instead devoted to helping researchers do science.</p><p>This analysis also shows that extrascientific professional incentives to pursue grant funding can damage the scientific efficiency of a proposal competition. As many of these extrascientific incentives arise from administrators using grant success as a primary yardstick of professional achievement, perhaps one major benefit of adding explicit randomness to the funding mechanism would be to compel administrators to de-emphasize grant success in professional evaluations. Alternatively, to the degree that administrators value and reward grant success because of the associated overhead funds that flow to the university, funding agencies could reduce waste by distributing overhead separately from funding awards. Instead, perhaps overhead could be allocated based partially on the recent past productivity of investigators at qualifying institutions, among other possible criteria. Disengaging overhead from individual grants would encourage administrators to value grants for the science those grants enable (as opposed to the overhead they bring), while allocating overhead based on institutions' aggregate scientific productivity would motivate universities to help their investigators produce good science.</p><p>Funding agencies often have pragmatic reasons to emphasize the meritocratic nature of their award processes. However, our model also suggests that downplaying elements of a funding competition's structure that introduce randomness to funding decisions can increase scientific waste. When applicants fail to recognize the degree to which the contest is already a lottery, they will overinvest effort in preparing proposals, to the detriment of science. This model does not account for all of the costs or scientific benefits of a proposal competition, including the costs of administering the competition, the time lost to reviewing grant proposals, or the benefit of building scientific community through convening a review panel. Nonetheless, we suggest that the direct value of the science supported by funding awards and the disutility costs of preparing grant proposals are the predominant scientific benefits and costs of the usual proposal competition <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b29">30]</ref>, and provide a useful starting point for a more detailed accounting.</p><p>Our model also makes several simplifying assumptions, each of which may provide scope for interesting future work. First, researchers pay a time cost to prepare a proposal but receive money if the proposal is funded. In our model, we have converted both time and money into scientific productivity, in order to place both on a common footing. To be more explicit, though, scientific productivity requires both time and money (among other resources), and researchers may have vastly different needs for both. In S1 Text, we show that our model can be formally extended to encompass researchers' different needs for time and money if the marginal rate of technical substitution (that is, the rate at which time and money can be exchanged without altering scientific productivity) is exactly correlated with the project's scientific value. Our main results still hold in this case, as long as researchers with the best ideas do not value time so greatly that they write the weakest proposals. A more general exploration of researchers' heterogeneous needs for time and money-and of how researchers may adjust their portfolio of scientific activities when time or money is scarce-provide ample opportunity for future work. Second, our model assumes that the distribution of the scientific value (v) across possible projects is exogeneous to the structure of the funding competition. This may not be the case if, for instance, a partial lottery encourages participation by investigators with unconventional views, reduces the psychological stigma of previous rejection <ref type="bibr" target="#b15">[16]</ref>, or discourages investigators either who have succeeded under the traditional proposal competition format or who perceive a lottery as riskier. In reality, such feedback loops may endogenize the distribution of v. Third, our model does not consider the savings that may accrue to investigators if they can submit a revised version of a rejected proposal to a different or subsequent competition. To a first approximation, submissions to multiple funders have the effect of increasing p, which can then be interpreted more generally as the proportion of ideas that get funded across all available funding programs. Iterations of revision and resubmission to the same funding program are likely to have more complex effects on efficiency and waste. Finally, our model is silent regarding whether many small or few large grants will promote scientific progress most efficiently, and is likewise silent about the factors that will influence this comparison.</p><p>To be sure, much more can be done to embellish this model. However, the qualitative results-that proposal competitions become increasingly inefficient as paylines drop and that professional pressure on investigators to pursue funding exacerbates these inefficiencies-are inherent to the structure of contests. Partial lotteries and contests that reward past success present radical alternatives for allocating funds and are sure to be controversial. Nevertheless, whatever their other merits and drawbacks, these alternatives could restore efficiency in distributing funds that has been lost as those funds have become increasingly scarce. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supporting information</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig 1 .</head><label>1</label><figDesc>An investigator prepares her grant proposal to the strength that maximizes her payoff. The blue curve shows the expected benefit to the investigator, which is determined by the project's value, any extrascientific reward that the investigator receives from getting the grant, the probability of receiving funding, and the intrinsic value of writing a proposal. The red curve shows the disutility cost of preparing a proposal. The investigator's payoff is the difference between the benefit and the cost. The vertical line shows the bid (Eq 1)-the proposal strength that maximizes the payoff. At the bid, the ratio of the payoff (given by the length of the solid vertical line) to the cost (given by the length of the dashed vertical line) gives the investigator's return on her investment.https://doi.org/10.1371/journal.pbio.3000065.g001 Scientific efficiency of grant proposal competitions PLOS Biology | https://doi.org/10.1371/journal.pbio.3000065 January 2, 2019</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig 2 .</head><label>2</label><figDesc>Diminishing paylines reduce investigators' ROIs in a proposal competition.A: Equilibrium benefit (blue or green) and cost (red) curves for an investigator with a project at the 90th percentile of v in a proposal competition. The blue and green curves show the benefit at a 45% and 15% payline, respectively. Vertical lines show the investigator's equilibrium bid, with solid portions giving the investigator's payoff and dashed portions showing the cost. The corner in the benefit curves appears at the strongest proposal submitted. B: An investigator's ROI (Eq 3) in a proposal competition with 45% (solid line) or 15% (dashed line) paylines, as a function of the quantile of the scientific value of her project, F(v). These curves also give the investigator's ROI in a partial lottery with 45% or 15% lottery lines, and any payline. These results use the baseline parameters. ROI, return on investment.https://doi.org/10.1371/journal.pbio.3000065.g002</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig 3 .</head><label>3</label><figDesc>Both decreasing paylines and extrascientific rewards to investigators reduce the scientific efficiency of the funding program. A: Both the average scientific value per funded proposal (blue line, Eq 4) and the average waste per funded proposal (red lines, Eq 5) are higher for lower paylines, for the baseline parameter set and paylines �50%. The solid red line shows costs when investigators are motivated only by the scientific value of the funded research (v 0 = 0); the dashed red line shows costs when investigators are additionally motivated by private, extrascientific rewards (v 0 = 0.25). Note that the vertical axis does not extend to 0. B: The scientific gain or loss per funded proposal is lower for lower paylines, both in the absence (v 0 = 0, solid line) and presence (v 0 = 0.25, dashed line) of extrascientific benefits to investigators. Values of other parameters are as specified in the main text. Identical results hold if the horizontal axis is reinterpreted as the proportion of proposals that qualify for a lottery, regardless of the payline. Avg., average. https://doi.org/10.1371/journal.pbio.3000065.g003 Scientific efficiency of grant proposal competitions PLOS Biology | https://doi.org/10.1371/journal.pbio.3000065 January 2, 2019</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>https://doi.org/10.1371/journal.pbio.3000065.g004 Scientific efficiency of grant proposal competitions PLOS Biology | https://doi.org/10.1371/journal.pbio.3000065 January 2, 2019</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>S1Fig.</head><label></label><figDesc>The success rate of grant proposals for NIH R01 and equivalents has declined substantially over the past 50 years. Data from FY 1962-2008 include R01, R23, R29, and R37 proposals, as reported by NIH's Office of Extramural Research<ref type="bibr" target="#b33">[34]</ref>. Data from 1962-1969 are NIH estimates. Data for FY 2009-2016 include R01 and R37 proposals, as reported by<ref type="bibr" target="#b1">[2]</ref> (R01 and R37 provide the vast majority of proposals for earlier years). Data include new applications, supplements, and renewals, and the success rate is calculated as the number of proposals funded divided by the number of proposals reviewed.FY, fiscal year; NIH, National Institutes of Health. (TIF) S2 Fig. Random samples from copula distributions used to model error in assessment of grant proposals. A: Clayton copula with θ = 10. B: Clayton copula with θ = 5. Blue dashed lines give the median of the assessed quantile as a function of the actual quantile. (TIF) S3 Fig. Parallel results to Fig 2, except with the first alternative parameter set. See S1 Text for parameter values in this alternative parameter set. (EPS) S4 Fig. Parallel results to Fig 2, except with the second alternative parameter set. See S1 Text for parameter values in this alternative parameter set. (EPS) S5 Fig. Parallel results to Fig 3, except with the first alternative parameter set. Note that the vertical axis in panel A does not extend to 0. (EPS) S6 Fig. Parallel results to Fig 3, except with the second alternative parameter set. In this figure, data are shown for paylines ranging from p = 0.001 to p = 0.999. Note that the vertical axis in panel A does not extend to 0. (EPS) S7 Fig. Parallel results to Fig 2, except with perfect assessment of proposal strength. All other parameter values are the same as in Fig 2. (EPS) S8 Fig. Parallel results to Fig 3, except with perfect assessment of proposal strength. All other parameter values are the same as in Fig 3. Note that the vertical axis in panel A does not extend to 0. (EPS) S9 Fig. Parallel results to Fig 3 for a three-tier lottery with equally sized tiers and a 3:2:1 ratio of funding probabilities across the tiers. The horizontal axis gives the proportion of proposals that qualify for any tier of the lottery. Scientific value and scientific waste per funded proposal are independent of the actual payline, as long as the payline is less than 2/3 of the lottery line. (If the payline exceeds 2/3 of the lottery line, then the ratios of funding across tiers will be something other than 3:2:1, and thus the average value and average cost of a funded proposal will change slightly.) All other parameter values are the same as in Fig 3. Note that the vertical axis in panel A does not extend to 0. (EPS) S1 Text. Mathematical details. (PDF) proposal competitions and lotteries. KG thanks the University of Washington Department of Biology for visitor support.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">PLOS Biology | https://doi.org/10.1371/journal.pbio.3000065 January 2, 2019</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>We thank M. Lachmann for early discussions, A. Barnett and T. Bergstrom for useful feedback on an earlier draft, and B. Moldovanu for helping us clearly articulate the tension between</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Contributions</head><p>Conceptualization: Kevin Gross, Carl T. Bergstrom. </p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Peer review in the National Science Foundation: Phase one of a study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Cole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Academy of Sciences</title>
+		<imprint>
+			<date type="published" when="1978" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cole S, Rubin L, Cole JR. Peer review in the National Science Foundation: Phase one of a study. National Academy of Sciences; 1978.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">National Institutes of Health. NIH Funding Facts</title>
+		<ptr target="https://report.nih.gov/fundingfacts/fundingfacts.aspx" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">National Institutes of Health. NIH Funding Facts; 2017. https://report.nih.gov/fundingfacts/fundingfacts. aspx.</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Deb Science Staff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Numbers</surname></persName>
+		</author>
+		<ptr target="https://debblog.nsfbio.com/2017/01/06/deb-numbers-fy-2016-wrap-up/" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">DEB Science Staff. DEB Numbers: FY 2016 Wrap-Up; 2017. https://debblog.nsfbio.com/2017/01/06/ deb-numbers-fy-2016-wrap-up/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Report to the National Science Board on the National Science Foundation&apos;s Merit Review Process</title>
+	</analytic>
+	<monogr>
+		<title level="j">Fiscal Year</title>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+		<respStmt>
+			<orgName>National Science Foundation</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">National Science Foundation. Report to the National Science Board on the National Science Founda- tion&apos;s Merit Review Process, Fiscal Year 2016; 2017.</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Modelling academic research funding as a resource allocation problem</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Geard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Noble</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">3rd World Congress on Social Simulation</title>
+		<meeting><address><addrLine>Kassel, Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010-09-09" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Geard N, Noble J. Modelling academic research funding as a resource allocation problem. In: 3rd World Congress on Social Simulation, 6-9 September, 2010, Kassel, Germany; 2010.</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A time allocation study of university faculty</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Albert</forename><forename type="middle">N</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Swann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Barry</forename><surname>Bozeman</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.econedurev.2007.04.002</idno>
+		<ptr type="open-access" target="http://libres.uncg.edu/ir/uncg/f/A_Link_Time_2007.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Economics of Education Review</title>
+		<title level="j" type="abbrev">Economics of Education Review</title>
+		<idno type="ISSN">0272-7757</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="363" to="374" />
+			<date type="published" when="2008-08" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Link AN, Swann CA, Bozeman B. A time allocation study of university faculty. Economics of Education Review. 2008; 27(4):363-374.</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Testimony before the Senate Committee on Appropriations: Subcommittee on Labor, Health and Human Services, Education, and Related Agencies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Siliciano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">U.S. Senate Committee on Appropriations</title>
+		<imprint>
+			<date type="published" when="2007-03-19" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Siliciano R. Testimony before the Senate Committee on Appropriations: Subcommittee on Labor, Health and Human Services, Education, and Related Agencies. U.S. Senate Committee on Appropria- tions, Washington, DC; March 19, 2007.</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Ask the researcher: The experience of applying for health and medical research funding in Australia-Survey results</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Barnett</surname></persName>
+		</author>
+		<ptr target="https://eprints.qut.edu.au/107238/" />
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barnett AG. Ask the researcher: The experience of applying for health and medical research funding in Australia-Survey results; 2013. https://eprints.qut.edu.au/107238/.</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Rescuing US biomedical research from its systemic flaws</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Alberts</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">W</forename><surname>Kirschner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Tilghman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Varmus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="5773" to="5777" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alberts B, Kirschner MW, Tilghman S, Varmus H. Rescuing US biomedical research from its systemic flaws. Proceedings of the National Academy of Sciences. 2014; 111(16):5773-5777.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On the time spent preparing grant proposals: an observational study of Australian researchers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Danielle</forename><forename type="middle">L</forename><surname>Herbert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Adrian</forename><forename type="middle">G</forename><surname>Barnett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Philip</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicholas</forename><surname>Graves</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmjopen-2013-002800</idno>
+		<idno type="PMID">23793700</idno>
+		<idno type="PMCID">PMC3664356</idno>
+		<ptr type="open-access" target="https://bmjopen.bmj.com/content/3/5/e002800.full.pdf" />
+		<ptr target="https://doi.org/10.1136/bmjopen-2013-002800" />
+	</analytic>
+	<monogr>
+		<title level="j">BMJ Open</title>
+		<title level="j" type="abbrev">BMJ Open</title>
+		<idno type="ISSN">2044-6055</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e002800</biblScope>
+			<date type="published" when="2013" />
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Herbert DL, Barnett AG, Clarke P, Graves N. On the time spent preparing grant proposals: an observa- tional study of Australian researchers. BMJ Open. 2013; 3(5):e002800. https://doi.org/10.1136/ bmjopen-2013-002800 PMID: 23793700</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">American Idol and NIH Grant Review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pagano</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2006.08.004</idno>
+		<idno type="PMID">16923379</idno>
+		<ptr target="https://doi.org/10.1016/j.cell.2006.08.004" />
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="637" to="638" />
+			<date type="published" when="2006-08" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pagano M. American Idol and NIH grant review. Cell. 2006; 126(4):637-638. https://doi.org/10.1016/j. cell.2006.08.004 PMID: 16923379</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Real Lives and White Lies in the Funding of Scientific Research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">A</forename><surname>Lawrence</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pbio.1000197</idno>
+		<idno type="PMID">19753105</idno>
+		<idno type="PMCID">PMC2735719</idno>
+		<ptr type="open-access" target="https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1000197&amp;type=printable" />
+		<ptr target="https://doi.org/10.1371/journal.pbio.1000197" />
+	</analytic>
+	<monogr>
+		<title level="j">PLoS Biology</title>
+		<title level="j" type="abbrev">PLoS Biol</title>
+		<idno type="ISSNe">1545-7885</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">e1000197</biblScope>
+			<date type="published" when="2009-09-15" />
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lawrence PA. Real lives and white lies in the funding of scientific research. PLoS Biol. 2009; 7(9): e1000197. https://doi.org/10.1371/journal.pbio.1000197 PMID: 19753105</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Funding grant proposals for scientific research: retrospective analysis of scores by members of grant review panel</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Barnett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Clarke</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmj.d4797</idno>
+		<idno type="PMID">21951756</idno>
+		<idno type="PMCID">PMC3181233</idno>
+		<idno type="ark">ark:/67375/NVC-73BSHHW2-5</idno>
+		<idno type="istexId">B13FE5A92499755BE4A38E32310752ECED2842E1</idno>
+		<ptr type="open-access" target="https://www.bmj.com/content/343/bmj.d4797.full.pdf" />
+		<ptr target="https://doi.org/10.1136/bmj.d4797" />
+	</analytic>
+	<monogr>
+		<title level="j">BMJ</title>
+		<title level="j" type="abbrev">BMJ</title>
+		<idno type="ISSN">0959-8138</idno>
+		<idno type="ISSNe">1468-5833</idno>
+		<imprint>
+			<biblScope unit="volume">343</biblScope>
+			<biblScope unit="issue">sep27 1</biblScope>
+			<biblScope unit="page" from="d4797" to="d4797" />
+			<date type="published" when="2011-09-27" />
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Graves N, Barnett AG, Clarke P. Funding grant proposals for scientific research: retrospective analysis of scores by members of grant review panel. BMJ. 2011; 343:d4797. https://doi.org/10.1136/bmj.d4797 PMID: 21951756</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">More time for research: fund people not projects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">P</forename><surname>Ioannidis</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/477529a</idno>
+		<idno type="PMID">21956312</idno>
+		<ptr target="https://doi.org/10.1038/477529a" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">477</biblScope>
+			<biblScope unit="issue">7366</biblScope>
+			<biblScope unit="page" from="529" to="531" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ioannidis JP. More time for research: fund people not projects. Nature. 2011; 477(7366):529-531. https://doi.org/10.1038/477529a PMID: 21956312</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">From funding agencies to scientific agency</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Johan</forename><surname>Bollen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">David</forename><surname>Crandall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Damion</forename><surname>Junk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ying</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Katy</forename><surname>Börner</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/embr.201338068</idno>
+		<idno type="PMID">24397931</idno>
+		<idno type="PMCID">PMC3989857</idno>
+		<idno type="ark">ark:/67375/WNG-36JDDH7R-2</idno>
+		<idno type="istexId">DFA984BEBB0A8069D5802D05481746A390629AC0</idno>
+		<ptr type="open-access" target="http://europepmc.org/articles/pmc3989857?pdf=render" />
+		<ptr target="https://doi.org/10.1002/embr.201338068" />
+	</analytic>
+	<monogr>
+		<title level="j">EMBO reports</title>
+		<title level="j" type="abbrev">EMBO rep</title>
+		<idno type="ISSN">1469-221X</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="n/a" to="n/a" />
+			<date type="published" when="2014-01" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bollen J, Crandall D, Junk D, Ding Y, Börner K. From funding agencies to scientific agency. EMBO Reports. 2014; 15(2):131-133. https://doi.org/10.1002/embr.201338068 PMID: 24397931</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Research Funding: the Case for a Modified Lottery</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ferric</forename><forename type="middle">C</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Arturo</forename><surname>Casadevall</surname></persName>
+		</author>
+		<idno type="DOI">10.1128/mbio.00422-16</idno>
+		<idno type="PMID">27073093</idno>
+		<idno type="PMCID">PMC4959526</idno>
+		<ptr type="open-access" target="https://mbio.asm.org/content/mbio/7/2/e00422-16.full.pdf" />
+		<ptr target="https://doi.org/10.1128/mBio.00422-16" />
+	</analytic>
+	<monogr>
+		<title level="j">mBio</title>
+		<title level="j" type="abbrev">mBio</title>
+		<idno type="ISSNe">2150-7511</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="422" to="438" />
+			<date type="published" when="2016-04-12" />
+			<publisher>American Society for Microbiology</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fang FC, Casadevall A. Research funding: the case for a modified lottery. mBio. 2016; 7(2):e00422- 16. https://doi.org/10.1128/mBio.00422-16 PMID: 27073093</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Centralized Funding and Epistemic Exploration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Avin</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bjps/axx059</idno>
+		<ptr type="open-access" target="http://philsci-archive.pitt.edu/13369/7/Centralised-Funding-and-Epistemic-Exploration-Final-Revision-for-web.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">The British Journal for the Philosophy of Science</title>
+		<idno type="ISSN">0007-0882</idno>
+		<idno type="ISSNe">1464-3537</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="629" to="656" />
+			<date type="published" when="2017-11-29" />
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Avin S. Centralized Funding and Epistemic Exploration. The British Journal for the Philosophy of Sci- ence. 2018; axx059.</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">How much would each researcher receive if competitive government research funding were distributed equally among researchers?</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Krist</forename><surname>Vaesen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joel</forename><surname>Katzav</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0183967</idno>
+		<idno type="PMID">28886054</idno>
+		<idno type="PMCID">PMC5590858</idno>
+		<ptr type="open-access" target="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0183967&amp;type=printable" />
+		<ptr target="https://doi.org/10.1371/journal.pone.0183967" />
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">e0183967</biblScope>
+			<date type="published" when="2017-09-08" />
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vaesen K, Katzav J. How much would each researcher receive if competitive government research funding were distributed equally among researchers? PLoS ONE. 2017; 12(9):e0183967. https://doi. org/10.1371/journal.pone.0183967 PMID: 28886054</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Policy considerations for random allocation of research funds</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Avin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RT A Journal on Research Policy and Evaluation</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Avin S. Policy considerations for random allocation of research funds. RT A Journal on Research Policy and Evaluation. 2018; 6(1).</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The Optimal Allocation of Prizes in Contests</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Benny</forename><surname>Moldovanu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Aner</forename><surname>Sela</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-79182-9_45</idno>
+		<ptr type="open-access" target="https://ub-madoc.bib.uni-mannheim.de/2837/1/dp99_75.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">40 Years of Research on Rent Seeking 1</title>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="615" to="631" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Moldovanu B, Sela A. The optimal allocation of prizes in contests. American Economic Review. 2001; p. 542-558.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Ranking Methods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Vojnović</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/cbo9781139519366.011</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Contest Theory</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date>2016</date>
+			<biblScope unit="page" from="563" to="616" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vojnović M. Contest theory: Incentive mechanisms and ranking methods. Cambridge University Press; 2016.</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The Theory of Assortative Matching Based on Costly Signals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Heidrun</forename><forename type="middle">C</forename><surname>Hoppe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Benny</forename><surname>Moldovanu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Aner</forename><surname>Sela</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1467-937x.2008.00517.x</idno>
+		<idno type="ark">ark:/67375/HXZ-8T2R6GXF-Q</idno>
+		<idno type="istexId">5007BA756BB4BADC9FB15920CC56C54C7FF0A720</idno>
+		<ptr type="open-access" target="http://www.bgu.ac.il/~anersela/Papers/WP/WP_The_Theory_of_Assortative_Matching_Based_on_Costly_Signals.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economic Studies</title>
+		<idno type="ISSN">0034-6527</idno>
+		<idno type="ISSNe">1467-937X</idno>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="253" to="281" />
+			<date type="published" when="2009-01" />
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hoppe HC, Moldovanu B, Sela A. The theory of assortative matching based on costly signals. The Review of Economic Studies. 2009; 76(1):253-281.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Peer review in the National Science Foundation: Phase two of a study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Cole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Academy of Sciences</title>
+		<imprint>
+			<date type="published" when="1981" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cole S, Rubin L, Cole JR. Peer review in the National Science Foundation: Phase two of a study. National Academy of Sciences; 1981.</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Panel discussion does not improve reliability of peer review for medical research grant proposals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mikael</forename><surname>Fogelholm</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Saara</forename><surname>Leppinen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anssi</forename><surname>Auvinen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jani</forename><surname>Raitanen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anu</forename><surname>Nuutinen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kalervo</forename><surname>Väänänen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jclinepi.2011.05.001</idno>
+		<idno type="PMID">21831594</idno>
+		<ptr target="https://doi.org/10.1016/j.jclinepi.2011.05.001" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Clinical Epidemiology</title>
+		<title level="j" type="abbrev">Journal of Clinical Epidemiology</title>
+		<idno type="ISSN">0895-4356</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="52" />
+			<date type="published" when="2012-01" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fogelholm M, Leppinen S, Auvinen A, Raitanen J, Nuutinen A, Vä ä nä nen K. Panel discussion does not improve reliability of peer review for medical research grant proposals. Journal of Clinical Epidemiology. 2012; 65(1):47-52. https://doi.org/10.1016/j.jclinepi.2011.05.001 PMID: 21831594</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Low agreement among reviewers evaluating the same NIH grant applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Elizabeth</forename><forename type="middle">L</forename><surname>Pier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Markus</forename><surname>Brauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Amarette</forename><surname>Filut</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anna</forename><surname>Kaatz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joshua</forename><surname>Raclaw</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mitchell</forename><forename type="middle">J</forename><surname>Nathan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Cecilia</forename><forename type="middle">E</forename><surname>Ford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Molly</forename><surname>Carnes</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1714379115</idno>
+		<idno type="PMID">29507248</idno>
+		<idno type="PMCID">PMC5866547</idno>
+		<ptr type="open-access" target="https://www.pnas.org/content/pnas/115/12/2952.full.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc Natl Acad Sci USA</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2952" to="2957" />
+			<date type="published" when="2018-03-05" />
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pier EL, Brauer M, Filut A, Kaatz A, Raclaw J, Nathan MJ, et al. Low agreement among reviewers evalu- ating the same NIH grant applications. Proceedings of the National Academy of Sciences. 2018; 115 (12):2952-2957.</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">An introduction to copulas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">B</forename><surname>Nelsen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+	<note type="raw_reference">Nelsen RB. An introduction to copulas. 2nd ed. Springer; 2006.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A Model for Association in Bivariate Life Tables and Its Application in Epidemiological Studies of Familial Tendency in Chronic Disease Incidence</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Clayton</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2335289</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrika</title>
+		<title level="j" type="abbrev">Biometrika</title>
+		<idno type="ISSN">0006-3444</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">141</biblScope>
+			<date type="published" when="1978-04" />
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Clayton DG. A model for association in bivariate life tables and its application in epidemiological studies of familial tendency in chronic disease incidence. Biometrika. 1978; 65(1):141-151.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The predictive power of NSF reviewers and panels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Samuel</forename><forename type="middle">M</forename><surname>Scheiner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Lynette</forename><forename type="middle">M</forename><surname>Bouchie</surname></persName>
+		</author>
+		<idno type="DOI">10.1890/13.wb.017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Ecology and the Environment</title>
+		<title level="j" type="abbrev">Frontiers in Ecology and the Environment</title>
+		<idno type="ISSN">1540-9295</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="406" to="407" />
+			<date type="published" when="2013-10" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Scheiner SM, Bouchie LM. The predictive power of NSF reviewers and panels. Frontiers in Ecology and the Environment. 2013; 11(8):406-407.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Focal randomisation: an optimal mechanism for the evaluation of R&amp;D projects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">S</forename><surname>Brezis</surname></persName>
+		</author>
+		<idno type="DOI">10.3152/030234207x265394</idno>
+		<idno type="ark">ark:/67375/HXZ-535NS2RQ-W</idno>
+		<idno type="istexId">D7D5A5328121049DE206317B8039468B992B4234</idno>
+		<ptr type="open-access" target="http://pdfs.semanticscholar.org/4dec/64b4b847426a9149c0000c844319cb469f13.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Science and Public Policy</title>
+		<title level="j" type="abbrev">Sci. and Pub. Pol.</title>
+		<idno type="ISSN">0302-3427</idno>
+		<idno type="ISSNe">1471-5430</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="691" to="698" />
+			<date type="published" when="2007-12-01" />
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brezis ES. Focal randomisation: An optimal mechanism for the evaluation of R&amp;D projects. Science and Public Policy. 2007; 34(10):691-698.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Evaluation of the NSF DEB and IOS switch to preliminary proposal review: Final report</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Litwok</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gertels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Abt Associates</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Katz L, Litwok D, Gertels J. Evaluation of the NSF DEB and IOS switch to preliminary proposal review: Final report. Abt Associates; 2017.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The impact of a streamlined funding application process on application time: two cross-sectional surveys of Australian researchers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Barnett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Herbert</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmjopen-2014-006912</idno>
+		<idno type="PMID">25596201</idno>
+		<idno type="PMCID">PMC4298094</idno>
+		<ptr type="open-access" target="https://bmjopen.bmj.com/content/5/1/e006912.full.pdf" />
+		<ptr target="https://doi.org/10.1136/bmjopen-2014-006912" />
+	</analytic>
+	<monogr>
+		<title level="j">BMJ Open</title>
+		<title level="j" type="abbrev">BMJ Open</title>
+		<idno type="ISSN">2044-6055</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="e006912" to="e006912" />
+			<date type="published" when="2015-01-16" />
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barnett AG, Graves N, Clarke P, Herbert D. The impact of a streamlined funding application process on application time: two cross-sectional surveys of Australian researchers. BMJ open. 2015; 5(1): e006912. https://doi.org/10.1136/bmjopen-2014-006912 PMID: 25596201</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Funding by Lottery: Political Problems and Research Opportunities</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Barnett</surname></persName>
+		</author>
+		<idno type="DOI">10.1128/mbio.01369-16</idno>
+		<idno type="PMID">27578759</idno>
+		<idno type="PMCID">PMC4999556</idno>
+		<ptr type="open-access" target="https://mbio.asm.org/content/mbio/7/4/e01369-16.full.pdf" />
+		<ptr target="https://doi.org/10.1128/mBio.01369-16" />
+	</analytic>
+	<monogr>
+		<title level="j">mBio</title>
+		<title level="j" type="abbrev">mBio</title>
+		<idno type="ISSNe">2150-7511</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1369" to="1385" />
+			<date type="published" when="2016-08-30" />
+			<publisher>American Society for Microbiology</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barnett AG. Funding by lottery: Political problems and research opportunities. mBio. 2016; 7(4): e01369-16. https://doi.org/10.1128/mBio.01369-16 PMID: 27578759</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Problems of Monetary Management: The UK Experience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Goodhart</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-349-17295-5_4</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Monetary Theory and Practice</title>
+		<imprint>
+			<publisher>Macmillan Education UK</publisher>
+			<date type="published" when="1984" />
+			<biblScope unit="page" from="91" to="121" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goodhart CA. Problems of monetary management: The UK experience. In: Monetary Theory and Prac- tice. Springer; 1984. p. 91-121.</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Actual of NIH R01 equivalent success rate FY 1970-2008 and estimates of NIH R01 success rates, FY 1962-1969 from CGAF</title>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+		<respStmt>
+			<orgName>NIH Office of Extramural Research</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">NIH Office of Extramural Research. Actual of NIH R01 equivalent success rate FY 1970-2008 and esti- mates of NIH R01 success rates, FY 1962-1969 from CGAF; 2008.</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
